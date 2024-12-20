@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "durdtech"
+  },
+  "targets": {
+    "durdtech": {
+      "hosting": {
+        "main": [
+          "durdtech-13gov"
+        ],
+        "admin": [
+          "admin-39801"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

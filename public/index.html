@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="hidden-login container-dashboard">
+
+        <div class="login-container">
+            <div  class="login-signup">
+                <i class="fa-solid fa-x"></i>
+                <div class="login">
+                    <h1>Login:</h1>
+                    <form action="" class="login-form" autocomplete="off" aria-autocomplete="none">
+                        <label for="Email-log">Email Address:</label>
+                        <input type="email" name="email-log" autocomplete="off">
+                        <label for="password-log">Password:</label>
+                        <input type="password" name="password-log" autocomplete="off">
+                        <button class="logInBtn"  type="submit">Log In</button>
+                    </form>
+                </div>
+                <div class="signup">
+
+                    <h1>Signup:</h1>
+                    <form action="" class="signup-form" autocomplete="off">
+                        <label for="Email-reg">Email Address:</label>
+                        <input type="email" name="email-reg" autocomplete="off">
+                        <label for="password-reg">Password:</label>
+                        <input type="password" name="password-reg" autocomplete="off">
+                        <button class="signUpBtn" type="submit">Sign Up</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <header>
+            <div class="linksBanner">
+                <span class="slogan">We compete any price</span>
+                <div class="links">
+                    <a href=""><i class="fa-location-dot fa-solid"></i> <span class="location">Location
+                            Directions</span></a>
+                    <div class="socials">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-envelope fa-regular"></i></a>
+                        <a href=""><i class="fa-phone fa-solid"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <nav class="fixedNav">
+                <a href="index.html"> <img src="Logo.png" class="Logo" alt=""></a>
+                <form action="" class="searchForm">
+
+                    <span class="searchBarSpan"> <input class="searchBar" placeholder="Search" type="search"> </span>
+
+                </form>
+                <div class="navIcon">
+                    <i class="fa fa-sign-out logOutBtn" aria-hidden="true"></i>
+                    <i class="login-top-right fa-solid fa-user"></i>
+                    <a href="cart.html" class="cart"><i class="fa-cart-shopping fa-solid">
+
+                        <span class="cartCounter"></span>
+                    </i></a>
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <main class="main">
+            <section class="hero">
+                <h1>We've Got the Parts to Power Your Dreams</h1>
+                <a href="#products">Shop Now <i class="fa-arrow-right fa-solid"></i></a>
+            </section>
+
+            <section class="products" >
+                <h1 id="products">Products:</h1>
+                <hr>
+                <div id="product-grid" class="product-grid">
+              
+
+                    <!-- <div class="product-card" id="1">
+                        <img id="Imaj" src="gamingPC.jpeg" alt="" class="product-image">
+                        <h3 class="category">Mic</h3>
+                        <p class="name">Razer Mini Mic </p>
+                        <p class="price">$ <span class="priceN">50</span> </p>
+                        <button class="add-to-cart">Add To Cart</button>
+
+
+                    </div> -->
+
+
+                 
+
+                 
+
+
+                   
+
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer>
+            <span>© DurdTech 2024. All rights reserved.</span>
+
+        </footer>
+    </div>
+
+
+
+
+    <script src="main.js" type="module"> </script>
+    <script type="module" src="dashboard.js"> </script>
+
+</body>
+
+</html>

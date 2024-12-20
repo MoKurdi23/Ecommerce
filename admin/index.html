@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="Portal-style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="admin-portal">
+        <!-- Header -->
+        <header class="banner">
+            <h1>Admin Portal</h1>
+        </header>
+
+        <!-- Tabs Navigation -->
+        <nav class="tabs">
+            
+            <button data-tab="orders" class="active tab">Orders</button>
+            <button data-tab="users" class="tab">Users</button>
+            <button data-tab="products" class="tab">Products</button>
+        </nav>
+
+        <!-- Content Area -->
+        <main class="content">
+            <!-- Orders Section -->
+            <section id="orders" class="active tab-content">
+                <h2>Orders</h2>
+                <ul class="order-list list">
+
+                    <li id="orders-title">
+                        <span>Orders:</span>
+                        <div>
+                            <span>User:</span><span>Status:</span>
+                        </div>
+
+                    </li>
+
+<!-- ////////////////////////////////////////////////////////////////////////// -->
+                   
+
+                </ul>
+
+
+                <!-- <div id="order-cards-container"> -->
+                 
+                <!-- </div> -->
+
+
+
+
+
+            </section>
+
+            <!-- Users Section -->
+            <section id="users" class="tab-content">
+                <h2>Users</h2>
+                <ul class="list user-list">
+
+                    <li id="users-title">
+                        <span >User:</span>
+
+                        <span >Password:</span>
+
+
+
+                    </li>
+
+
+<!-- ////////////////////////////////////////////////////////////////////////// -->
+
+                   
+                   
+                </ul>
+
+            </section>
+
+            <!-- Products Section -->
+            <section id="products" class="tab-content">
+                <h2>Products</h2> <button>add product +</button>
+                <ul class="list product-list">
+                    <li id="products-title">
+                        <span>Products:</span>
+                        <div>
+                            <span>SKU:</span><span>Category:</span> <span>Price:</span>
+                        </div>
+
+                    </li>
+
+
+                    <!-- ////////////////////////////////////////////////////////////////////////// -->
+
+                    <li class="product-list-item product-list">
+                       <span >Brush</span>
+                        <div>
+                            <span class="sku">69420 </span><span>Utensil</span> <span>$3</span>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+
+                    </li>
+              
+                </ul>
+
+            </section>
+
+
+
+
+
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Admin Portal © 2024</p>
+        </footer>
+
+        
+    </div>
+
+
+
+
+
+<!-- Popup Form for Adding a Product -->
+<div id="popupForm" class="hidden popup-form">
+    <div class="popup-content">
+      <h2>Add Product</h2>
+      <form id="addProductForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required>
+  
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" required>
+  
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+  
+        <label for="sku">SKU:</label>
+        <input type="text" id="sku" name="sku" required>
+  
+        <label for="imageUpload">Upload Image:</label>
+        <input type="text" id="imageUpload" name="imageUpload" required>
+  
+        <div class="form-actions">
+          <button type="submit" id="submitProductBtn">Submit</button>
+          <button type="button" id="closeFormBtn">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+
+<script src="main.js" type="module"></script>
+<script src="Portal.js" type="module"></script>
+</body>
+
+</html>
