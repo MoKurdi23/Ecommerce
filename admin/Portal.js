@@ -13,6 +13,21 @@ export function showDetails(item) {
   item.classList.add("flexx");
 }
 document.addEventListener("DOMContentLoaded", async () => {
+
+  function showPopupForm() {
+    const popupForm = document.getElementById('popupForm');
+    popupForm.classList.remove('hidden');
+  }
+
+  function hidePopupForm() {
+    const popupForm = document.getElementById('popupForm');
+    popupForm.classList.add('hidden');
+  }
+
+
+  document.querySelector('#products button').addEventListener('click', showPopupForm);
+  document.getElementById('closeFormBtn').addEventListener('click', hidePopupForm);
+
    // Fetch users from Firestore
    const users = await fetchUsers();
    console.log("Fetched Users:", users);
@@ -44,11 +59,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
   // Handle order click event
-  document.querySelector('li.order1').addEventListener('click', (e) => {
-    if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'I') {
-      showDetails(document.querySelector('#order1'));
-    }
-  });
+  // document.querySelector('li.order1').addEventListener('click', (e) => {
+  //   if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'I') {
+  //     showDetails(document.querySelector('#order1'));
+  //   }
+  // });
 
   // Back to list view
   function backToList() {
@@ -63,22 +78,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   // Handle back to list click (House icon)
-  document.querySelector('i.fa-house').addEventListener('click', backToList);
+
 
   // Popup Form Handlers
-  function showPopupForm() {
-    const popupForm = document.getElementById('popupForm');
-    popupForm.classList.remove('hidden');
-  }
-
-  function hidePopupForm() {
-    const popupForm = document.getElementById('popupForm');
-    popupForm.classList.add('hidden');
-  }
 
   // Attach event listeners for the popup form
-  document.querySelector('#products button').addEventListener('click', showPopupForm);
-  document.getElementById('closeFormBtn').addEventListener('click', hidePopupForm);
+  
 });
 
 

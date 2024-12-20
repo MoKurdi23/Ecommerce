@@ -251,6 +251,11 @@ left: 25px;
   z-index: 1000;
 }
 
+.hidden{
+  display: none;
+} 
+
+
 .popup-form.hidden {
   display: none;
 }

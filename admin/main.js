@@ -62,24 +62,11 @@ export async function fetchUsers() {// async to make sure all data is fetched be
 
 
 document.addEventListener('DOMContentLoaded', async function () {
-  const ref = collection(db, 'Products');
+  
 
-
-
-
-
-
-
-
-  //add User
-
-
-
-
-
-
-  const form = document.querySelector('#addProductForm')
+const form = document.querySelector('#addProductForm')
   form.addEventListener('submit', async (e) => {
+    e.preventDefault()
     try {
       const btn = document.querySelector('#submitProductBtn');
       const formData = new FormData(form, btn);
@@ -100,12 +87,12 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
 
       );
-      window.location.reload()
+    
     }
 
     catch (e) {
       console.error("Error writing document: ", e);
-      window.location.reload()
+      
     }
 
 
