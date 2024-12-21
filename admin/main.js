@@ -3,7 +3,7 @@ import { getFirestore, doc, getDoc, collection, getDocs, setDoc, deleteDoc } fro
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
 import {showDetails} from './Portal.js'
 
-// Firebase configuration
+
 const firebaseConfig = {
   apiKey: "AIzaSyAvhcMK0PrHjBoRRWuXp7_fLcIdmgmw_Z4",
   authDomain: "durdtech.firebaseapp.com",
@@ -14,12 +14,12 @@ const firebaseConfig = {
   measurementId: "G-QCMDGKWBSY"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);// get actual databse
 
 
-// Function to add a user to the DOM
+
 export function addUserToDOM(email, password) {
   const newUser = document.createElement("li");
   newUser.classList.add("user-list-item", "user");
@@ -40,6 +40,7 @@ export function addUserToDOM(email, password) {
 
 
 export async function fetchUsers() {
+  const users = [];
   try {
     const namesCollectionRef = collection(db, "Names"); 
     const querySnapshot = await getDocs(namesCollectionRef);
