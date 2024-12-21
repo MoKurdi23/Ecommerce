@@ -325,6 +325,11 @@ border: none;
     
     
   }
+  .checkoutTotal{
+    text-wrap: nowrap;
+    position: relative;
+    right: 70px;
+  }
 
   .products-list,.billing-details{
 display: flex;
