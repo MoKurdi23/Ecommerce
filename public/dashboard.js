@@ -112,19 +112,11 @@ addedProducts.forEach((produc)=>{
 
 })
 
-// const products =collection(db,'Products')
-// const docs=await getDocs(products)
 
-
-// docs.forEach((doc) => {
-//   const product=doc.data()
 
 
 })
 
-// https://ibb.co/xJZBfnq
-// https://ibb.co/8gJ53GQ
-// https://ibb.co/vL3w2y4
 
 
 

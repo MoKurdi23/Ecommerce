@@ -601,9 +601,6 @@ gap:20px
     content: none;
   }
 
-  /* .checkout{
-
-  } */
 
 
 
@@ -705,3 +702,159 @@ grid-area: a;
 
 
   .cc{margin-top: 150px;}
+
+
+
+
+
+@media (max-width: 900px) {
+  .linksBanner {
+    flex-direction: column;
+    padding: 0.7em 2em;
+  }
+
+  .links, .socials {
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .hero {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+    max-width: 80%;
+  }
+
+  .products {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .cart-checkout, .your-order {
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+  }
+
+  .cart-item {
+    gap: 20px;
+  }
+
+  .checkout-btn {
+    width: 90%;
+  }
+  .login-signup{
+    height: 100%;
+    flex-direction: column;
+  width: 100%;
+    margin-top: -10px;
+    
+  }
+  .login{
+    border-right: 0;
+  }
+  .main-cart,.main-checkout{
+    flex-direction: column;
+  }
+  .products-list{
+    width: 100%;
+    max-height: 100%;
+    overflow: scroll;
+  }
+  .billing-details{
+    margin-top: 30px;
+    width: 100%;
+  }
+  .searchBar{max-width: 240px;
+  
+}
+
+  .Logo{
+    width: 130px;
+  }
+
+  .cart-price-title{
+    margin-left: 250px;
+    padding-bottom: 100px;
+  }
+  .main-cart{
+    margin-top: 10px;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .cart{
+    border-left: 0;
+  }
+
+  .searchBar{max-width: 250px;
+    margin-left: 0px;}
+  
+
+  header {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .linksBanner {
+    flex-direction: column;
+    padding: 0.5em 1em;
+  }
+
+  .links, .socials {
+    
+    gap: 5px;
+  }
+
+  .hero {
+    display: none;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+    max-width: 100%;
+  }
+
+  .products {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    height: auto;
+  }
+
+  .cart-checkout, .your-order {
+    width: 100%;
+    padding: 5px;
+    overflow: auto;
+  }
+
+  .checkout-btn {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+  }
+}

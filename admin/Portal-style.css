@@ -1,4 +1,4 @@
-/* General Layout */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body, html {
     height: 100vh;
   }
   
-  /* Banner */
+
   .banner {
     background-color: #333;
     color: white;
@@ -23,7 +23,7 @@ body, html {
     flex: 0 0 auto;
   }
   
-  /* Tabs Navigation */
+  
   .tabs {
     position: relative;
     display: flex;
@@ -95,7 +95,7 @@ left: 25px;
     left: 30px;
     top: 20px;
   }
-  /* Content */
+ 
   .content {
     flex: 1 1 auto;
     overflow-y: auto;
@@ -221,7 +221,7 @@ left: 25px;
     display: none;
   }
   
-  /* Footer */
+ 
   .footer {
     background-color: #333;
     color: white;
@@ -237,7 +237,7 @@ left: 25px;
 
 
 
-/* Popup Form */
+
 .popup-form {
   position: fixed;
   top: 0;

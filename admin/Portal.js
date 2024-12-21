@@ -1,5 +1,5 @@
 
-// portal.js
+
 import { fetchUsers, addUserToDOM } from "./main.js";
 
 
@@ -36,12 +36,10 @@ document.addEventListener("DOMContentLoaded", async () => {
    users.forEach((user) => {
      addUserToDOM(user.email, user.password);
    });
-  // Fetch Steve's Weight from Firestore
-  // const steveWeight = await fetchSteveWeight();
-  // console.log("Steve's Weight:", steveWeight);  // Log it for testing
+  
  
 
-  // Tab switching functionality
+  //switch tabs
   const tabs = document.querySelectorAll(".tab");
   const tabContents = document.querySelectorAll(".tab-content");
 
@@ -55,17 +53,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
-  // Show details view
+  
 
-
-  // Handle order click event
-  // document.querySelector('li.order1').addEventListener('click', (e) => {
-  //   if (e.target.tagName !== 'INPUT' && e.target.tagName !== 'I') {
-  //     showDetails(document.querySelector('#order1'));
-  //   }
-  // });
-
-  // Back to list view
+  // back to list fxn
   function backToList() {
     const list = document.querySelector(".tab-content.active .list");
     const details = document.querySelectorAll(".details");
@@ -77,12 +67,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  // Handle back to list click (House icon)
-
-
-  // Popup Form Handlers
-
-  // Attach event listeners for the popup form
+  
   
 });
 

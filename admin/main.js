@@ -38,14 +38,13 @@ export function addUserToDOM(email, password) {
 
 
 
-// Fetch users from Firestore
-export async function fetchUsers() {// async to make sure all data is fetched before dom manipulations
-  const users = [];
+
+export async function fetchUsers() {
   try {
-    const namesCollectionRef = collection(db, "Names"); // select collection 
-    const querySnapshot = await getDocs(namesCollectionRef);//get all docs in that collection 
-    querySnapshot.forEach((doc) => {//iterate over collection 
-      const nameData = doc.data();//get data object from each doc 
+    const namesCollectionRef = collection(db, "Names"); 
+    const querySnapshot = await getDocs(namesCollectionRef);
+    querySnapshot.forEach((doc) => {
+      const nameData = doc.data();
       users.push({
         email: nameData.email,
         password: nameData.pass,
@@ -172,60 +171,6 @@ Orders.forEach((order)=>{
 
 })
 
-
-
-
-
-
-
-
-{/* <li class="product-list-item ">
-<span >Brush</span>
- <div>
-     <span class="sku">69420 </span><span>Utensil</span> <span>$3</span>
-     <i class="fa-solid fa-trash"></i>
- </div>
-
-</li> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Function to create and add the order list item <li>
 function createOrderListItem(email, orderID) {
   const orderListItem = document.createElement("li");
   orderListItem.classList.add("order-list-item", orderID,'order1'); // Use doc ID for class
@@ -276,12 +221,12 @@ function createOrderDetailsDiv(orderData, orderID) {
       </div>
   `;
 
-  // Append the order details div to the orders container
+
   document.querySelector('#orders').appendChild(orderDetailsDiv);
 }
 
-// Example function to display both order item and details
 
 
-// Call displayOrders to populate the orders section on page load
+
+
 

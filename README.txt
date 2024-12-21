@@ -1,0 +1,1 @@
+This small scale project was made with html vanilla css and js ,

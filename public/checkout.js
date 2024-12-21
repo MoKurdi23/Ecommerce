@@ -1,7 +1,7 @@
 import { getFirestore, doc, getDoc, collection, getDocs, setDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
 import { db } from './main.js'
 
-// await setDoc(doc(db, "Names", customID), {
+
 
 
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const total = JSON.parse(localStorage.getItem('total'))
     const user= JSON.parse(localStorage.getItem('user'))
     const SKUS = []
-    document.querySelector('.checkoutTotal').textContent = '$' + localStorage.getItem('total')
+    document.querySelector('.checkoutTotal').textContent = 'Total:  $' + localStorage.getItem('total')
     const billingForm = document.querySelector('#billing-form')
     const paymentForm = document.querySelector('#payment-form')
 

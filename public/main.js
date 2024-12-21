@@ -148,7 +148,7 @@ localStorage.getItem('cartCounter') ;
                 formDataObject[key] = value;
             }
             )
-            const email = formDataObject["email-log"];  //using special characters for name , have to use []
+            const email = formDataObject["email-log"];  //when using special characters for name , have to use []
             const password = formDataObject["password-log"];
             currentUser = await signInWithEmailAndPassword(auth, email, password);
             alert('Logged In Successfully!!!!')
@@ -207,7 +207,7 @@ localStorage.getItem('cartCounter') ;
 
 
 
-    // This listens to authentication state changes and acts according to the state (logged in or not)
+    // This listens to authentication state changes and acts according to the state (logged in or no)
     onAuthStateChanged(auth, (currentUser) => {
         if (currentUser) {
             document.querySelector('.login-top-right').style.display = 'none'
@@ -241,7 +241,7 @@ localStorage.getItem('cartCounter') ;
         })
 
 
-        //class="product-grid>product-card"
+      
 
 
 
