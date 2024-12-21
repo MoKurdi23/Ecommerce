@@ -40,6 +40,7 @@ export function addUserToDOM(email, password) {
 
 
 export async function fetchUsers() {
+  const users = [];
   try {
     const namesCollectionRef = collection(db, "Names"); 
     const querySnapshot = await getDocs(namesCollectionRef);
