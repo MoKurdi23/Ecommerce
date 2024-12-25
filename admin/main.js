@@ -19,7 +19,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);// get actual databse
 
 
-
+//users section
 export function addUserToDOM(email, password) {
   const newUser = document.createElement("li");
   newUser.classList.add("user-list-item", "user");
@@ -38,7 +38,7 @@ export function addUserToDOM(email, password) {
 
 
 
-
+//returns array of users 
 export async function fetchUsers() {
   const users = [];
   try {
@@ -65,6 +65,8 @@ document.addEventListener('DOMContentLoaded', async function () {
   
 
 const form = document.querySelector('#addProductForm')
+
+//add product
   form.addEventListener('submit', async (e) => {
     e.preventDefault()
     try {
@@ -145,7 +147,7 @@ const form = document.querySelector('#addProductForm')
 
   })
 
-
+//trash icon to remove product from database
   document.querySelectorAll('.fa-trash').forEach(function (trash) {
 
     trash.addEventListener('click', async (e) => {
@@ -171,7 +173,7 @@ Orders.forEach((order)=>{
 
 
 })
-
+// order in list 
 function createOrderListItem(email, orderID) {
   const orderListItem = document.createElement("li");
   orderListItem.classList.add("order-list-item", orderID,'order1'); // Use doc ID for class
@@ -196,7 +198,7 @@ function createOrderListItem(email, orderID) {
 
 
 
-// Function to create and add the order details div
+// Function to create and add the order details card
 function createOrderDetailsDiv(orderData, orderID) {
   const orderDetailsDiv = document.createElement('div');
   orderDetailsDiv.id = orderID; // Set ID to the document ID for easy access

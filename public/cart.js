@@ -85,10 +85,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 
 
-  //   const products=collection(db,'Products')
-  const product = await getDoc(doc(db, 'Products', 'M124'))
-  console.log(product.data().category)
-
+ 
 
   document.querySelectorAll('.fa-circle-xmark').forEach(
 
